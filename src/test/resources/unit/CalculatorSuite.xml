@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Calculator Suite">
+
+    <suite-files>
+        <suite-file path="CalculatorSumSuite.xml"/>
+        <suite-file path="CalculatorSubstractSuite.xml"/>
+        <suite-file path="CalculatorMultiplySuite.xml"/>
+    </suite-files>
+
+</suite>

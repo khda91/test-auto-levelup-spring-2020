@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Substract Suite">
+
+    <test name="Substract Sum">
+        <classes>
+            <class name="lesson.unit.tests.beforeafter.CalculatorSubstractTest"/>
+        </classes>
+    </test>
+
+</suite>

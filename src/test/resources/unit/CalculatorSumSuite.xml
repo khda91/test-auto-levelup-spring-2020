@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Sum Suite">
+
+    <test name="Calculator Sum">
+        <classes>
+            <class name="lesson.unit.tests.beforeafter.CalculatorSumTest"/>
+        </classes>
+    </test>
+
+    <test name="Calculator Positive Data Provider">
+        <classes>
+            <class name="lesson.unit.tests.beforeafter.CalculatorSumDataProviderTest">
+                <methods>
+                    <include name="testSumTPT"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Calculator Negative Data Provider">
+        <classes>
+            <class name="lesson.unit.tests.beforeafter.CalculatorSumDataProviderTest">
+                <methods>
+                    <exclude name="testSumTPT"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

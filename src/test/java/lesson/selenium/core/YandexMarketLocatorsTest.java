@@ -1,12 +1,10 @@
-package lesson.selenium;
+package lesson.selenium.core;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -14,7 +12,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class YandexMarketWaitsTest {
+public class YandexMarketLocatorsTest {
 
     WebDriver driver;
 
@@ -45,15 +43,7 @@ public class YandexMarketWaitsTest {
     @Test
     public void classNameLocatorTest() {
         driver.get("http://users.bugred.ru/");
-        driver.manage().timeouts().implicitlyWait(7500, TimeUnit.MILLISECONDS);
-        long start = System.currentTimeMillis();
-        WebElement label;
-        try {
-            label = driver.findElement(By.className("newlink1"));
-        } finally {
-            long end = System.currentTimeMillis();
-            System.out.println(((end - start) / 1000));
-        }
+        WebElement label = driver.findElement(By.className("newlink"));
 //        WebElement label = driver.findElement(By.cssSelector(".newlink"));
         System.out.println(label.getText());
         try {
@@ -65,10 +55,7 @@ public class YandexMarketWaitsTest {
 
     @Test
     public void linkTextLocatorTest() {
-        WebElement label = new WebDriverWait(driver, 10)
-                .until(ExpectedConditions.elementToBeClickable(By.linkText("Маркет")));
-        WebElement label1 = new WebDriverWait(driver, 10, 2000)
-                .until(ExpectedConditions.elementToBeClickable(By.linkText("Авто12")));
+        WebElement label = driver.findElement(By.linkText("Маркет"));
         System.out.println(label.getText());
         try {
             TimeUnit.MILLISECONDS.sleep(5000);
@@ -81,4 +68,5 @@ public class YandexMarketWaitsTest {
     public void tearDown() {
         driver.quit();
     }
+
 }

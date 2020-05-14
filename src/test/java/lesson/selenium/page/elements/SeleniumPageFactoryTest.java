@@ -71,4 +71,27 @@ public class SeleniumPageFactoryTest extends AbstractBaseTest {
 
         assertEqualsNoOrder(actualProductNames.toArray(), expectedProductNames.toArray());
     }
+
+    @Test
+    public void checkFilterTest() {
+        YandexMarketHomePage homePage = new YandexMarketHomePage(driver);
+        homePage.goToCategory("Бытовая техника");
+
+        YandexMarketCategoryPage categoryPage = new YandexMarketCategoryPage(driver);
+        categoryPage.goToSubCategory("Холодильники");
+
+        YandexMarketSubCategoryPage subCategoryPage = new YandexMarketSubCategoryPage(driver);
+        subCategoryPage.selectCheckbox("сверху");
+        subCategoryPage.selectCheckbox("снизу");
+
+        try {
+            Thread.sleep(7000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        assertEqualsNoOrder(actualProductNames.toArray(), expectedProductNames.toArray());
+//        assertThat(actualProductNames)
+//                .describedAs("List does not match")
+//                .containsExactlyInAnyOrderElementsOf(expectedProductNames);
+    }
 }

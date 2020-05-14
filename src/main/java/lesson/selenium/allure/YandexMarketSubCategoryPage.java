@@ -1,4 +1,4 @@
-package lesson.selenium.page.elements;
+package lesson.selenium.allure;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -33,9 +33,6 @@ public class YandexMarketSubCategoryPage extends YandexMarketBasePage {
                 .until(visibilityOfAllElementsLocatedBy(By.className("n-filter-sorter__link12")));
         driver.manage().timeouts().implicitlyWait(10000, TimeUnit.MILLISECONDS);
         return until != null;
-//        return driver.findElements(By.className("n-filter-sorter__link12")) != null;
-//                new WebDriverWait(driver, 7)
-//                .until(visibilityOfAllElementsLocatedBy(By.className("n-filter-sorter__link12"))) != null;
     }
 
     public YandexMarketProduct getProductByIndex(int productIndexOnThePage) {

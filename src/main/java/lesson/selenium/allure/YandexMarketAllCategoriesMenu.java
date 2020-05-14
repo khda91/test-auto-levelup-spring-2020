@@ -1,4 +1,4 @@
-package lesson.selenium.page.elements;
+package lesson.selenium.allure;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

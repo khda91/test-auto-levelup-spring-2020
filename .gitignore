@@ -2,3 +2,6 @@
 **/target
 **/*.iml
 **/out
+**/allure-results
+**/allure-report
+**/.allure

@@ -1,4 +1,4 @@
-package lesson.api.trello.boards;
+package lesson.api.rest.trello.boards;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 

@@ -1,6 +1,6 @@
-package lesson.api.trello.boards;
+package lesson.api.rest.trello.boards;
 
-import lesson.api.trello.TrelloApiBaseTest;
+import lesson.api.rest.trello.TrelloApiBaseTest;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;

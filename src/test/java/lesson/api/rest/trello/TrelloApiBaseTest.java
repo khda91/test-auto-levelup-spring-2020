@@ -1,4 +1,4 @@
-package lesson.api.trello;
+package lesson.api.rest.trello;
 
 import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.RestAssured;

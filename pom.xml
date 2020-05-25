@@ -14,13 +14,13 @@
 
     <profiles>
         <profile>
-            <id>Allure Suite</id>
+            <id>AllureSuite</id>
             <properties>
                 <suite.name>${basedir}/src/test/resources/selenium/AllureTestSuite.xml</suite.name>
             </properties>
         </profile>
         <profile>
-            <id>Fluent Suite</id>
+            <id>FluentSuite</id>
             <properties>
                 <suite.name>${basedir}/src/test/resources/selenium/FluentTestSuite.xml</suite.name>
             </properties>

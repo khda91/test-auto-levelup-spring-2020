@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Allure example Suite">
+
+    <test name="Selenium Yandex Market Test">
+        <classes>
+            <class name="lesson.selenium.fluent.FluentPageObjectSeleniumTest"/>
+        </classes>
+    </test>
+</suite>

@@ -12,6 +12,21 @@
         <aspectj.version>1.8.10</aspectj.version>
     </properties>
 
+    <profiles>
+        <profile>
+            <id>Allure Suite</id>
+            <properties>
+                <suite.name>${basedir}/src/test/resources/selenium/AllureTestSuite.xml</suite.name>
+            </properties>
+        </profile>
+        <profile>
+            <id>Fluent Suite</id>
+            <properties>
+                <suite.name>${basedir}/src/test/resources/selenium/FluentTestSuite.xml</suite.name>
+            </properties>
+        </profile>
+    </profiles>
+
     <dependencies>
         <dependency>
             <groupId>org.testng</groupId>
@@ -110,7 +125,7 @@
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
                     <suiteXmlFiles>
-                        <suiteXmlFile>${basedir}/src/test/resources/selenium/AllureTestSuite.xml</suiteXmlFile>
+                        <suiteXmlFile>${suite.name}</suiteXmlFile>
                     </suiteXmlFiles>
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"

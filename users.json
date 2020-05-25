@@ -1,0 +1,12 @@
+{
+  "user1": {
+    "username": "name",
+    "password": "password",
+    "display_name": "display name"
+  },
+  "user2": {
+    "username": "name",
+    "password": "password",
+    "display_name": "display name"
+  }
+}

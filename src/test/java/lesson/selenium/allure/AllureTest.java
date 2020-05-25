@@ -4,12 +4,14 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Issue;
 import io.qameta.allure.Link;
 import io.qameta.allure.TmsLink;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Test(description = "Яндекс Маркет. Сравнение")
+@Listeners({AllureStepListener.class})
 public class AllureTest extends AbstractBaseTest {
 
     @Test(description = "Добавление товаров к ставнению")

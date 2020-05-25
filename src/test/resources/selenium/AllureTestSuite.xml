@@ -1,6 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Allure example Suite">
 
+    <listeners>
+        <listener class-name="lesson.selenium.allure.AllureStepListener" />
+    </listeners>
+
     <test name="Selenium Yandex Market Test">
         <classes>
             <class name="lesson.selenium.allure.AllureTest"/>

@@ -12,7 +12,7 @@ import org.testng.annotations.BeforeMethod;
 
 public abstract class AbstractBaseTest {
 
-    protected WebDriver driver;
+    public static WebDriver driver;
 
     protected ActionSteps actionSteps;
 

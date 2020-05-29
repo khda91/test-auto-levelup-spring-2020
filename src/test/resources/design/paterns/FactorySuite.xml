@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Factory example Suite">
+
+    <test name="Yandex Test">
+        <classes>
+            <class name="lesson.design.patterns.factory.WebDriverFactoryTest"/>
+        </classes>
+    </test>
+</suite>

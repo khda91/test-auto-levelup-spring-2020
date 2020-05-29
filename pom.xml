@@ -110,7 +110,7 @@
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
                     <suiteXmlFiles>
-                        <suiteXmlFile>${basedir}/src/test/resources/selenium/AllureTestSuite.xml</suiteXmlFile>
+                        <suiteXmlFile>${basedir}/src/test/resources/design/paterns/FactorySuite.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"

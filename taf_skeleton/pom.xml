@@ -18,7 +18,7 @@
         <testng.version>7.1.0</testng.version>
         <selenium-java.version>3.141.59</selenium-java.version>
         <webdrivermanager.version>3.8.1</webdrivermanager.version>
-        <commons-io.version>2.6</commons-io.version>
+        <commons-io.version>2.7</commons-io.version>
         <assertj-core.version>3.15.0</assertj-core.version>
         <slf4j-api.version>1.7.30</slf4j-api.version>
         <allure-testng.version>2.13.2</allure-testng.version>
